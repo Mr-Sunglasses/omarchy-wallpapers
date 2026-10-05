@@ -22,6 +22,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Install Pillow
+        run: pip install pillow
+
       - name: Clone Omarchy
         run: git clone --quiet --depth 1 https://github.com/omacom/omarchy "$RUNNER_TEMP/omarchy"
 
