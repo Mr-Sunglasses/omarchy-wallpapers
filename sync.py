@@ -112,78 +112,53 @@ def sync(src):
 
 
 def readme(commit):
-    rows, gallery, total = [], [], 0
+    gallery, total = [], 0
     for d in theme_dirs():
         files = sorted(f.name for f in d.iterdir())
         total += len(files)
-        rows.append(f"| [{title(d.name)}]({d.name}) | `{d.name}/` | {len(files)} |")
-        imgs = " ".join(f'<img src="{d.name}/{f}" width="200" alt="{title(d.name)}: {f}">' for f in files)
-        gallery.append(f"### {title(d.name)}\n\n{imgs}\n")
+        imgs = " ".join(f'<img src="{d.name}/{f}" width="160" alt="{title(d.name)}: {f}">' for f in files)
+        gallery.append(f"**[{title(d.name)}]({d.name})** <sub>{len(files)}</sub><br>\n{imgs}\n")
+    themes = len(gallery)
 
-    return f"""# Omarchy wallpapers
+    return f"""<div align="center">
 
-All {total} wallpapers that ship with the {len(rows)} [Omarchy](https://github.com/omacom/omarchy) themes, sorted into one folder per theme. They were copied from each theme's `backgrounds/` folder at Omarchy commit `{commit}`, with Omarchy's WebP files converted to JPEG (or PNG for lossless ones) so they work in any app or OS.
+# Omarchy wallpapers
 
-They pair well with [ghostty-omarchy-themes](https://github.com/Mr-Sunglasses/ghostty-omarchy-themes), which ports the same themes to Ghostty.
+All {total} wallpapers from the {themes} [Omarchy](https://github.com/omacom/omarchy) themes, in one folder per theme.
 
-## Get them
+</div>
+
+## Download
 
 ```sh
 git clone https://github.com/Mr-Sunglasses/omarchy-wallpapers
 ```
 
-Want just one theme? Use a sparse checkout:
+Just one theme:
 
 ```sh
 git clone --filter=blob:none --sparse https://github.com/Mr-Sunglasses/omarchy-wallpapers
-cd omarchy-wallpapers
-git sparse-checkout set tokyo-night
+cd omarchy-wallpapers && git sparse-checkout set tokyo-night
 ```
 
-## Use them on macOS
+## Use them on a Mac
 
-### Switch from the terminal
+- **Easiest:** [oms](https://github.com/Mr-Sunglasses/oms) picks a theme's wallpaper (and terminal colors) for you and sets it on every desktop.
+- **System Settings:** go to **Wallpaper → Add Folder…**, choose a theme folder, then click a picture. Pick **Auto-Rotate** to cycle through it.
+- **Terminal:** `./wallpaper.sh tokyo-night` sets the next Tokyo Night wallpaper. Run `./wallpaper.sh` to list themes.
 
-[`wallpaper.sh`](wallpaper.sh) sets a wallpaper on every display:
+## Wallpapers
 
-```sh
-./wallpaper.sh                        # list themes
-./wallpaper.sh tokyo-night            # next Tokyo Night wallpaper (run again to cycle)
-./wallpaper.sh tokyo-night random     # a random one
-./wallpaper.sh tokyo-night list       # list its wallpapers
-./wallpaper.sh tokyo-night 3          # the 3rd one from that list
-./wallpaper.sh random                 # anything from any theme
-```
+""" + "\n".join(gallery) + f"""
+## Contributing
 
-Add an alias to your shell config to switch from anywhere:
+This repo copies Omarchy's wallpapers automatically every day, so please don't add or change pictures here. To suggest a wallpaper, contribute it to [Omarchy](https://github.com/omacom/omarchy) and it will show up here after the next sync.
 
-```sh
-alias wall="$HOME/path/to/omarchy-wallpapers/wallpaper.sh"
-```
+The sync is [`sync.py`](sync.py), run daily by a [GitHub Action](.github/workflows/sync.yml). It also converts Omarchy's WebP files to JPEG or PNG so they open anywhere. Last synced from Omarchy commit `{commit}`.
 
-It changes the wallpaper for the Space you're on. Other Spaces keep their own wallpaper.
-
-### Use System Settings
-
-1. Open **System Settings → Wallpaper**.
-2. Click **Add Folder…** and choose a theme folder, such as `tokyo-night`.
-3. The folder's wallpapers now appear in the Wallpaper settings. Click one to use it.
-4. To rotate through a theme automatically, choose the folder's **Auto-Rotate** option and pick how often it changes.
-
-Add a folder for every theme you like, and switching is one click.
-
-## Staying up to date
-
-A [GitHub Action](.github/workflows/sync.yml) runs [`sync.py`](sync.py) every day. When Omarchy adds, changes or removes a wallpaper or theme, the action commits the change here.
-
-## Themes
-
-| Theme | Folder | Wallpapers |
-|---|---|---|
-""" + "\n".join(rows) + "\n\n## Preview\n\n" + "\n".join(gallery) + """
 ## Credits
 
-These wallpapers come from [Omarchy](https://github.com/omacom/omarchy) by David Heinemeier Hansson and its contributors, which is released under the [MIT License](LICENSE). Some of the images were made by the original theme authors and other artists. All credit for them goes to their creators.
+The wallpapers come from [Omarchy](https://github.com/omacom/omarchy) and the artists who made them. All credit goes to them. [MIT License](LICENSE).
 """
 
 
