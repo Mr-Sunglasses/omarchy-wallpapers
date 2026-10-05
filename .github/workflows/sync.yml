@@ -1,0 +1,49 @@
+name: Sync wallpapers
+
+on:
+  schedule:
+    - cron: "0 6 * * *" # every day at 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Clone Omarchy
+        run: git clone --quiet --depth 1 https://github.com/omacom/omarchy "$RUNNER_TEMP/omarchy"
+
+      - name: Sync wallpapers
+        id: sync
+        run: |
+          python sync.py "$RUNNER_TEMP/omarchy" | tee "$RUNNER_TEMP/changes.txt"
+          echo "commit=$(git -C "$RUNNER_TEMP/omarchy" rev-parse --short HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Commit changes
+        run: |
+          git add -A
+          # Only the README's commit hash changed: nothing worth committing.
+          if [ ! -s "$RUNNER_TEMP/changes.txt" ]; then
+            echo "No wallpaper changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          {
+            echo "Sync wallpapers from Omarchy ${{ steps.sync.outputs.commit }}"
+            echo
+            cat "$RUNNER_TEMP/changes.txt"
+          } | git commit --quiet --file -
+          git push

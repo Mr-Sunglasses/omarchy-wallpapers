@@ -18,6 +18,10 @@ cd omarchy-wallpapers
 git sparse-checkout set tokyo-night
 ```
 
+## Staying up to date
+
+A [GitHub Action](.github/workflows/sync.yml) runs [`sync.py`](sync.py) every day. When Omarchy adds, changes or removes a wallpaper or theme, the action commits the change here.
+
 ## Themes
 
 | Theme | Folder | Wallpapers |
