@@ -2,7 +2,7 @@
 
 # Omarchy wallpapers
 
-All 92 wallpapers from the 22 [Omarchy](https://github.com/omacom/omarchy) themes, in one folder per theme.
+All 96 wallpapers from the 23 [Omarchy](https://github.com/omacom/omarchy) themes, in one folder per theme.
 
 </div>
 
@@ -84,6 +84,9 @@ cd omarchy-wallpapers && git sparse-checkout set tokyo-night
 **[Solitude](solitude)** <sub>5</sub><br>
 <img src="solitude/1-on-pole.jpg" width="160" alt="Solitude: 1-on-pole.jpg"> <img src="solitude/2-wreakage.jpg" width="160" alt="Solitude: 2-wreakage.jpg"> <img src="solitude/3-climb.jpg" width="160" alt="Solitude: 3-climb.jpg"> <img src="solitude/4-ether.jpg" width="160" alt="Solitude: 4-ether.jpg"> <img src="solitude/5-eyed.jpg" width="160" alt="Solitude: 5-eyed.jpg">
 
+**[Starship](starship)** <sub>4</sub><br>
+<img src="starship/1-starbase.jpg" width="160" alt="Starship: 1-starbase.jpg"> <img src="starship/2-flight14-dawn.jpg" width="160" alt="Starship: 2-flight14-dawn.jpg"> <img src="starship/3-engine-cluster.jpg" width="160" alt="Starship: 3-engine-cluster.jpg"> <img src="starship/4-morning-pad.jpg" width="160" alt="Starship: 4-morning-pad.jpg">
+
 **[Tokyo Night](tokyo-night)** <sub>8</sub><br>
 <img src="tokyo-night/0-winding-road.jpg" width="160" alt="Tokyo Night: 0-winding-road.jpg"> <img src="tokyo-night/1-quattro.jpg" width="160" alt="Tokyo Night: 1-quattro.jpg"> <img src="tokyo-night/2-swirl-buck.jpg" width="160" alt="Tokyo Night: 2-swirl-buck.jpg"> <img src="tokyo-night/3-sunset-lake.jpg" width="160" alt="Tokyo Night: 3-sunset-lake.jpg"> <img src="tokyo-night/4-omakub.jpg" width="160" alt="Tokyo Night: 4-omakub.jpg"> <img src="tokyo-night/5-oma-cityscape.jpg" width="160" alt="Tokyo Night: 5-oma-cityscape.jpg"> <img src="tokyo-night/6-oma.jpg" width="160" alt="Tokyo Night: 6-oma.jpg"> <img src="tokyo-night/omarchy.png" width="160" alt="Tokyo Night: omarchy.png">
 
@@ -97,7 +100,7 @@ cd omarchy-wallpapers && git sparse-checkout set tokyo-night
 
 This repo copies Omarchy's wallpapers automatically every day, so please don't add or change pictures here. To suggest a wallpaper, contribute it to [Omarchy](https://github.com/omacom/omarchy) and it will show up here after the next sync.
 
-The sync is [`sync.py`](sync.py), run daily by a [GitHub Action](.github/workflows/sync.yml). It also converts Omarchy's WebP files to JPEG or PNG so they open anywhere. Last synced from Omarchy commit `65c0f33`.
+The sync is [`sync.py`](sync.py), run daily by a [GitHub Action](.github/workflows/sync.yml). It also converts Omarchy's WebP files to JPEG or PNG so they open anywhere. Last synced from Omarchy commit `988f44e`.
 
 ## Credits
 
