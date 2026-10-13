@@ -2,7 +2,7 @@
 
 # Omarchy wallpapers
 
-All 96 wallpapers from the 23 [Omarchy](https://github.com/omacom/omarchy) themes, in one folder per theme.
+All 97 wallpapers from the 23 [Omarchy](https://github.com/omacom/omarchy) themes, in one folder per theme.
 
 </div>
 
@@ -87,8 +87,8 @@ cd omarchy-wallpapers && git sparse-checkout set tokyo-night
 **[Starship](starship)** <sub>4</sub><br>
 <img src="starship/1-starbase.jpg" width="160" alt="Starship: 1-starbase.jpg"> <img src="starship/2-flight14-dawn.jpg" width="160" alt="Starship: 2-flight14-dawn.jpg"> <img src="starship/3-engine-cluster.jpg" width="160" alt="Starship: 3-engine-cluster.jpg"> <img src="starship/4-morning-pad.jpg" width="160" alt="Starship: 4-morning-pad.jpg">
 
-**[Tokyo Night](tokyo-night)** <sub>8</sub><br>
-<img src="tokyo-night/0-winding-road.jpg" width="160" alt="Tokyo Night: 0-winding-road.jpg"> <img src="tokyo-night/1-quattro.jpg" width="160" alt="Tokyo Night: 1-quattro.jpg"> <img src="tokyo-night/2-swirl-buck.jpg" width="160" alt="Tokyo Night: 2-swirl-buck.jpg"> <img src="tokyo-night/3-sunset-lake.jpg" width="160" alt="Tokyo Night: 3-sunset-lake.jpg"> <img src="tokyo-night/4-omakub.jpg" width="160" alt="Tokyo Night: 4-omakub.jpg"> <img src="tokyo-night/5-oma-cityscape.jpg" width="160" alt="Tokyo Night: 5-oma-cityscape.jpg"> <img src="tokyo-night/6-oma.jpg" width="160" alt="Tokyo Night: 6-oma.jpg"> <img src="tokyo-night/omarchy.png" width="160" alt="Tokyo Night: omarchy.png">
+**[Tokyo Night](tokyo-night)** <sub>9</sub><br>
+<img src="tokyo-night/0-liftoff.jpg" width="160" alt="Tokyo Night: 0-liftoff.jpg"> <img src="tokyo-night/1-winding-road.jpg" width="160" alt="Tokyo Night: 1-winding-road.jpg"> <img src="tokyo-night/2-quattro.jpg" width="160" alt="Tokyo Night: 2-quattro.jpg"> <img src="tokyo-night/3-swirl-buck.jpg" width="160" alt="Tokyo Night: 3-swirl-buck.jpg"> <img src="tokyo-night/4-sunset-lake.jpg" width="160" alt="Tokyo Night: 4-sunset-lake.jpg"> <img src="tokyo-night/5-omakub.jpg" width="160" alt="Tokyo Night: 5-omakub.jpg"> <img src="tokyo-night/6-oma-cityscape.jpg" width="160" alt="Tokyo Night: 6-oma-cityscape.jpg"> <img src="tokyo-night/7-oma.jpg" width="160" alt="Tokyo Night: 7-oma.jpg"> <img src="tokyo-night/omarchy.png" width="160" alt="Tokyo Night: omarchy.png">
 
 **[Vantablack](vantablack)** <sub>5</sub><br>
 <img src="vantablack/0-dot-hands.png" width="160" alt="Vantablack: 0-dot-hands.png"> <img src="vantablack/1-twisted-stairs.jpg" width="160" alt="Vantablack: 1-twisted-stairs.jpg"> <img src="vantablack/2-layers-deep.jpg" width="160" alt="Vantablack: 2-layers-deep.jpg"> <img src="vantablack/3-layers-stacked.jpg" width="160" alt="Vantablack: 3-layers-stacked.jpg"> <img src="vantablack/omarchy.png" width="160" alt="Vantablack: omarchy.png">
@@ -100,7 +100,7 @@ cd omarchy-wallpapers && git sparse-checkout set tokyo-night
 
 This repo copies Omarchy's wallpapers automatically every day, so please don't add or change pictures here. To suggest a wallpaper, contribute it to [Omarchy](https://github.com/omacom/omarchy) and it will show up here after the next sync.
 
-The sync is [`sync.py`](sync.py), run daily by a [GitHub Action](.github/workflows/sync.yml). It also converts Omarchy's WebP files to JPEG or PNG so they open anywhere. Last synced from Omarchy commit `988f44e`.
+The sync is [`sync.py`](sync.py), run daily by a [GitHub Action](.github/workflows/sync.yml). It also converts Omarchy's WebP files to JPEG or PNG so they open anywhere. Last synced from Omarchy commit `492b883`.
 
 ## Credits
 
