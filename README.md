@@ -2,7 +2,7 @@
 
 # Omarchy wallpapers
 
-All 97 wallpapers from the 23 [Omarchy](https://github.com/omacom/omarchy) themes, in one folder per theme.
+All 98 wallpapers from the 23 [Omarchy](https://github.com/omacom/omarchy) themes, in one folder per theme.
 
 </div>
 
@@ -33,8 +33,8 @@ cd omarchy-wallpapers && git sparse-checkout set tokyo-night
 **[Catppuccin Latte](catppuccin-latte)** <sub>2</sub><br>
 <img src="catppuccin-latte/1-color-fade.jpg" width="160" alt="Catppuccin Latte: 1-color-fade.jpg"> <img src="catppuccin-latte/omarchy.png" width="160" alt="Catppuccin Latte: omarchy.png">
 
-**[Ethereal](ethereal)** <sub>3</sub><br>
-<img src="ethereal/1-cosmic.jpg" width="160" alt="Ethereal: 1-cosmic.jpg"> <img src="ethereal/2-meadow.jpg" width="160" alt="Ethereal: 2-meadow.jpg"> <img src="ethereal/omarchy.png" width="160" alt="Ethereal: omarchy.png">
+**[Ethereal](ethereal)** <sub>4</sub><br>
+<img src="ethereal/1-cosmic.jpg" width="160" alt="Ethereal: 1-cosmic.jpg"> <img src="ethereal/2-meadow.jpg" width="160" alt="Ethereal: 2-meadow.jpg"> <img src="ethereal/3-roadster-starlight.jpg" width="160" alt="Ethereal: 3-roadster-starlight.jpg"> <img src="ethereal/omarchy.png" width="160" alt="Ethereal: omarchy.png">
 
 **[Everforest](everforest)** <sub>2</sub><br>
 <img src="everforest/1-tree-tops.jpg" width="160" alt="Everforest: 1-tree-tops.jpg"> <img src="everforest/omarchy.png" width="160" alt="Everforest: omarchy.png">
@@ -100,7 +100,7 @@ cd omarchy-wallpapers && git sparse-checkout set tokyo-night
 
 This repo copies Omarchy's wallpapers automatically every day, so please don't add or change pictures here. To suggest a wallpaper, contribute it to [Omarchy](https://github.com/omacom/omarchy) and it will show up here after the next sync.
 
-The sync is [`sync.py`](sync.py), run daily by a [GitHub Action](.github/workflows/sync.yml). It also converts Omarchy's WebP files to JPEG or PNG so they open anywhere. Last synced from Omarchy commit `492b883`.
+The sync is [`sync.py`](sync.py), run daily by a [GitHub Action](.github/workflows/sync.yml). It also converts Omarchy's WebP files to JPEG or PNG so they open anywhere. Last synced from Omarchy commit `e1891c9`.
 
 ## Credits
 
