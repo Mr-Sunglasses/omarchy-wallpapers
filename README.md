@@ -48,6 +48,9 @@ cd omarchy-wallpapers && git sparse-checkout set tokyo-night
 **[Hackerman](hackerman)** <sub>3</sub><br>
 <img src="hackerman/1-synth-scape.jpg" width="160" alt="Hackerman: 1-synth-scape.jpg"> <img src="hackerman/2-geometric.jpg" width="160" alt="Hackerman: 2-geometric.jpg"> <img src="hackerman/omarchy.png" width="160" alt="Hackerman: omarchy.png">
 
+**[Jade Horse](jade-horse)** <sub>4</sub><br>
+<img src="jade-horse/01-mountain-horses.jpg" width="160" alt="Jade Horse: 01-mountain-horses.jpg"> <img src="jade-horse/02-ink-horse.jpg" width="160" alt="Jade Horse: 02-ink-horse.jpg"> <img src="jade-horse/03-carved-jade-horse.jpg" width="160" alt="Jade Horse: 03-carved-jade-horse.jpg"> <img src="jade-horse/omarchy.png" width="160" alt="Jade Horse: omarchy.png">
+
 **[Kanagawa](kanagawa)** <sub>2</sub><br>
 <img src="kanagawa/1-kanagawa.jpg" width="160" alt="Kanagawa: 1-kanagawa.jpg"> <img src="kanagawa/omarchy.png" width="160" alt="Kanagawa: omarchy.png">
 
@@ -68,9 +71,6 @@ cd omarchy-wallpapers && git sparse-checkout set tokyo-night
 
 **[Nord](nord)** <sub>4</sub><br>
 <img src="nord/0-black-moon.jpg" width="160" alt="Nord: 0-black-moon.jpg"> <img src="nord/1-city-view.png" width="160" alt="Nord: 1-city-view.png"> <img src="nord/2-night-hawks.png" width="160" alt="Nord: 2-night-hawks.png"> <img src="nord/omarchy.png" width="160" alt="Nord: omarchy.png">
-
-**[Osaka Jade](osaka-jade)** <sub>4</sub><br>
-<img src="osaka-jade/1-glowing-city.jpg" width="160" alt="Osaka Jade: 1-glowing-city.jpg"> <img src="osaka-jade/2-shaded-entrance.jpg" width="160" alt="Osaka Jade: 2-shaded-entrance.jpg"> <img src="osaka-jade/3-mountain-moon.jpg" width="160" alt="Osaka Jade: 3-mountain-moon.jpg"> <img src="osaka-jade/omarchy.png" width="160" alt="Osaka Jade: omarchy.png">
 
 **[Retro 82](retro-82)** <sub>9</sub><br>
 <img src="retro-82/1-in-the-groove.jpg" width="160" alt="Retro 82: 1-in-the-groove.jpg"> <img src="retro-82/2-dusk-guardian.jpg" width="160" alt="Retro 82: 2-dusk-guardian.jpg"> <img src="retro-82/3-glassy-lines.jpg" width="160" alt="Retro 82: 3-glassy-lines.jpg"> <img src="retro-82/4-gateway.jpg" width="160" alt="Retro 82: 4-gateway.jpg"> <img src="retro-82/5-zen-boat.jpg" width="160" alt="Retro 82: 5-zen-boat.jpg"> <img src="retro-82/6-abstract-pyramids.jpg" width="160" alt="Retro 82: 6-abstract-pyramids.jpg"> <img src="retro-82/7-the-journey.jpg" width="160" alt="Retro 82: 7-the-journey.jpg"> <img src="retro-82/8-glitter-glass.jpg" width="160" alt="Retro 82: 8-glitter-glass.jpg"> <img src="retro-82/omarchy.png" width="160" alt="Retro 82: omarchy.png">
@@ -100,7 +100,7 @@ cd omarchy-wallpapers && git sparse-checkout set tokyo-night
 
 This repo copies Omarchy's wallpapers automatically every day, so please don't add or change pictures here. To suggest a wallpaper, contribute it to [Omarchy](https://github.com/omacom/omarchy) and it will show up here after the next sync.
 
-The sync is [`sync.py`](sync.py), run daily by a [GitHub Action](.github/workflows/sync.yml). It also converts Omarchy's WebP files to JPEG or PNG so they open anywhere. Last synced from Omarchy commit `e1891c9`.
+The sync is [`sync.py`](sync.py), run daily by a [GitHub Action](.github/workflows/sync.yml). It also converts Omarchy's WebP files to JPEG or PNG so they open anywhere. Last synced from Omarchy commit `2fca7fe`.
 
 ## Credits
 
