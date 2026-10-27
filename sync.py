@@ -10,6 +10,9 @@ and themes are added, changed ones updated, and ones removed upstream deleted.
 WebP files are converted so they work everywhere: lossless or transparent ones
 to PNG, the rest to JPEG. Other formats are copied as they are.
 
+Every wallpaper also gets a small JPEG preview in .previews/<theme>/<file>.jpg,
+so apps like oms can show them all without downloading the full pictures.
+
     ./sync.py                 # clones omarchy into a temp dir
     ./sync.py ~/src/omarchy   # or use an existing checkout
 """
@@ -30,6 +33,10 @@ ROOT = Path(__file__).resolve().parent
 # so converted files are only redone when the upstream file changes.
 SOURCES = ROOT / "sources.json"
 JPEG_QUALITY = 92
+PREVIEWS = ROOT / ".previews"
+# Big enough for a terminal preview pane; about 200 KB each.
+PREVIEW_SIZE = (1600, 1000)
+PREVIEW_QUALITY = 80
 
 # Display names that don't follow from the folder name.
 NAME_OVERRIDES = {
@@ -75,6 +82,8 @@ def write(f, dest):
 
 
 def sync(src):
+    """Mirrors the wallpapers. Returns the "<theme>/<file>" keys it wrote."""
+    changed = set()
     upstream = {d.parent.name: d for d in src.glob("themes/*/backgrounds") if d.is_dir() and any(d.iterdir())}
     sources = json.loads(SOURCES.read_text()) if SOURCES.exists() else {}
 
@@ -105,10 +114,37 @@ def sync(src):
             print(f"{'~' if dest.exists() else '+'} {key}")
             write(f, dest)
             sources[key] = digest
+            changed.add(key)
 
     existing = {f"{d.name}/{f.name}" for d in theme_dirs() for f in d.iterdir()}
     sources = {k: v for k, v in sorted(sources.items()) if k in existing}
     SOURCES.write_text(json.dumps(sources, indent=2) + "\n")
+    return changed
+
+
+def previews(changed):
+    """Makes missing or outdated previews and deletes ones without a wallpaper."""
+    wanted = set()
+    for d in theme_dirs():
+        for f in sorted(d.iterdir()):
+            key = f"{d.name}/{f.name}"
+            dest = PREVIEWS / d.name / f"{f.name}.jpg"
+            wanted.add(dest)
+            if dest.exists() and key not in changed:
+                continue
+            if not dest.exists() and key not in changed:
+                # A new wallpaper is already listed by sync(); only report repairs.
+                print(f"+ .previews/{key}.jpg")
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            image = Image.open(f)
+            image.thumbnail(PREVIEW_SIZE)
+            image.convert("RGB").save(dest, quality=PREVIEW_QUALITY, optimize=True)
+    for f in sorted(PREVIEWS.rglob("*.jpg")) if PREVIEWS.exists() else []:
+        if f not in wanted:
+            f.unlink()
+    for d in sorted(PREVIEWS.iterdir()) if PREVIEWS.exists() else []:
+        if d.is_dir() and not any(d.iterdir()):
+            d.rmdir()
 
 
 def readme(commit):
@@ -154,7 +190,7 @@ cd omarchy-wallpapers && git sparse-checkout set tokyo-night
 
 This repo copies Omarchy's wallpapers automatically every day, so please don't add or change pictures here. To suggest a wallpaper, contribute it to [Omarchy](https://github.com/omacom/omarchy) and it will show up here after the next sync.
 
-The sync is [`sync.py`](sync.py), run daily by a [GitHub Action](.github/workflows/sync.yml). It also converts Omarchy's WebP files to JPEG or PNG so they open anywhere. Last synced from Omarchy commit `{commit}`.
+The sync is [`sync.py`](sync.py), run daily by a [GitHub Action](.github/workflows/sync.yml). It also converts Omarchy's WebP files to JPEG or PNG so they open anywhere, and keeps a small preview of each one in `.previews/`. Last synced from Omarchy commit `{commit}`.
 
 ## Credits
 
@@ -173,7 +209,7 @@ def main():
         ["git", "-C", str(src), "rev-parse", "--short", "HEAD"], capture_output=True, text=True
     ).stdout.strip()
 
-    sync(src)
+    previews(sync(src))
     (ROOT / "README.md").write_text(readme(commit or "unknown"))
 
 
