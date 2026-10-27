@@ -100,7 +100,7 @@ cd omarchy-wallpapers && git sparse-checkout set tokyo-night
 
 This repo copies Omarchy's wallpapers automatically every day, so please don't add or change pictures here. To suggest a wallpaper, contribute it to [Omarchy](https://github.com/omacom/omarchy) and it will show up here after the next sync.
 
-The sync is [`sync.py`](sync.py), run daily by a [GitHub Action](.github/workflows/sync.yml). It also converts Omarchy's WebP files to JPEG or PNG so they open anywhere. Last synced from Omarchy commit `2fca7fe`.
+The sync is [`sync.py`](sync.py), run daily by a [GitHub Action](.github/workflows/sync.yml). It also converts Omarchy's WebP files to JPEG or PNG so they open anywhere, and keeps a small preview of each one in `.previews/`. Last synced from Omarchy commit `18ecf39`.
 
 ## Credits
 
