@@ -2,7 +2,7 @@
 
 # Omarchy wallpapers
 
-All 98 wallpapers from the 23 [Omarchy](https://github.com/omacom/omarchy) themes, in one folder per theme.
+All 98 wallpapers from the 23 [Omarchy](https://github.com/omacom/omarchy) themes, in one folder per theme, and their 19 intro animations.
 
 </div>
 
@@ -25,28 +25,38 @@ cd omarchy-wallpapers && git sparse-checkout set tokyo-night
 - **System Settings:** go to **Wallpaper → Add Folder…**, choose a theme folder, then click a picture. Pick **Auto-Rotate** to cycle through it.
 - **Terminal:** `./wallpaper.sh tokyo-night` sets the next Tokyo Night wallpaper. Run `./wallpaper.sh` to list themes.
 
+## Intros
+
+Some wallpapers come with a short animation that plays into them, in the theme's `intros` folder with the same name (`nord/intros/0-black-moon.mp4` ends on `nord/0-black-moon.jpg`). In Omarchy they play when you switch to that wallpaper; [oms](https://github.com/Mr-Sunglasses/oms) lists them as `▶ intro` wallpapers that play once and then rest on the picture.
+
 ## Wallpapers
 
 **[Catppuccin Mocha](catppuccin)** <sub>4</sub><br>
-<img src="catppuccin/1-totoro.jpg" width="160" alt="Catppuccin Mocha: 1-totoro.jpg"> <img src="catppuccin/2-waves.png" width="160" alt="Catppuccin Mocha: 2-waves.png"> <img src="catppuccin/3-blue-eye.png" width="160" alt="Catppuccin Mocha: 3-blue-eye.png"> <img src="catppuccin/omarchy.png" width="160" alt="Catppuccin Mocha: omarchy.png">
+<img src="catppuccin/1-totoro.jpg" width="160" alt="Catppuccin Mocha: 1-totoro.jpg"> <img src="catppuccin/2-waves.png" width="160" alt="Catppuccin Mocha: 2-waves.png"> <img src="catppuccin/3-blue-eye.png" width="160" alt="Catppuccin Mocha: 3-blue-eye.png"> <img src="catppuccin/omarchy.png" width="160" alt="Catppuccin Mocha: omarchy.png"><br>
+<sub>▶ Intros: [Totoro](catppuccin/intros/1-totoro.mp4), [Waves](catppuccin/intros/2-waves.mp4), [Blue Eye](catppuccin/intros/3-blue-eye.mp4)</sub>
 
 **[Catppuccin Latte](catppuccin-latte)** <sub>2</sub><br>
-<img src="catppuccin-latte/1-color-fade.jpg" width="160" alt="Catppuccin Latte: 1-color-fade.jpg"> <img src="catppuccin-latte/omarchy.png" width="160" alt="Catppuccin Latte: omarchy.png">
+<img src="catppuccin-latte/1-color-fade.jpg" width="160" alt="Catppuccin Latte: 1-color-fade.jpg"> <img src="catppuccin-latte/omarchy.png" width="160" alt="Catppuccin Latte: omarchy.png"><br>
+<sub>▶ Intros: [Color Fade](catppuccin-latte/intros/1-color-fade.mp4)</sub>
 
 **[Ethereal](ethereal)** <sub>4</sub><br>
-<img src="ethereal/1-cosmic.jpg" width="160" alt="Ethereal: 1-cosmic.jpg"> <img src="ethereal/2-meadow.jpg" width="160" alt="Ethereal: 2-meadow.jpg"> <img src="ethereal/3-roadster-starlight.jpg" width="160" alt="Ethereal: 3-roadster-starlight.jpg"> <img src="ethereal/omarchy.png" width="160" alt="Ethereal: omarchy.png">
+<img src="ethereal/1-cosmic.jpg" width="160" alt="Ethereal: 1-cosmic.jpg"> <img src="ethereal/2-meadow.jpg" width="160" alt="Ethereal: 2-meadow.jpg"> <img src="ethereal/3-roadster-starlight.jpg" width="160" alt="Ethereal: 3-roadster-starlight.jpg"> <img src="ethereal/omarchy.png" width="160" alt="Ethereal: omarchy.png"><br>
+<sub>▶ Intros: [Cosmic](ethereal/intros/1-cosmic.mp4)</sub>
 
 **[Everforest](everforest)** <sub>2</sub><br>
-<img src="everforest/1-tree-tops.jpg" width="160" alt="Everforest: 1-tree-tops.jpg"> <img src="everforest/omarchy.png" width="160" alt="Everforest: omarchy.png">
+<img src="everforest/1-tree-tops.jpg" width="160" alt="Everforest: 1-tree-tops.jpg"> <img src="everforest/omarchy.png" width="160" alt="Everforest: omarchy.png"><br>
+<sub>▶ Intros: [Tree Tops](everforest/intros/1-tree-tops.mp4)</sub>
 
 **[Flexoki Light](flexoki-light)** <sub>2</sub><br>
-<img src="flexoki-light/1-orb.png" width="160" alt="Flexoki Light: 1-orb.png"> <img src="flexoki-light/2-omarchy.png" width="160" alt="Flexoki Light: 2-omarchy.png">
+<img src="flexoki-light/1-orb.png" width="160" alt="Flexoki Light: 1-orb.png"> <img src="flexoki-light/2-omarchy.png" width="160" alt="Flexoki Light: 2-omarchy.png"><br>
+<sub>▶ Intros: [Orb](flexoki-light/intros/1-orb.mp4)</sub>
 
 **[Gruvbox](gruvbox)** <sub>6</sub><br>
 <img src="gruvbox/1-the-backwater.jpg" width="160" alt="Gruvbox: 1-the-backwater.jpg"> <img src="gruvbox/2-flower-basket.jpg" width="160" alt="Gruvbox: 2-flower-basket.jpg"> <img src="gruvbox/3-village-square.jpg" width="160" alt="Gruvbox: 3-village-square.jpg"> <img src="gruvbox/4-idyllic-procession.jpg" width="160" alt="Gruvbox: 4-idyllic-procession.jpg"> <img src="gruvbox/5-leaves.jpg" width="160" alt="Gruvbox: 5-leaves.jpg"> <img src="gruvbox/omarchy.png" width="160" alt="Gruvbox: omarchy.png">
 
 **[Hackerman](hackerman)** <sub>3</sub><br>
-<img src="hackerman/1-synth-scape.jpg" width="160" alt="Hackerman: 1-synth-scape.jpg"> <img src="hackerman/2-geometric.jpg" width="160" alt="Hackerman: 2-geometric.jpg"> <img src="hackerman/omarchy.png" width="160" alt="Hackerman: omarchy.png">
+<img src="hackerman/1-synth-scape.jpg" width="160" alt="Hackerman: 1-synth-scape.jpg"> <img src="hackerman/2-geometric.jpg" width="160" alt="Hackerman: 2-geometric.jpg"> <img src="hackerman/omarchy.png" width="160" alt="Hackerman: omarchy.png"><br>
+<sub>▶ Intros: [Synth Scape](hackerman/intros/1-synth-scape.mp4)</sub>
 
 **[Jade Horse](jade-horse)** <sub>4</sub><br>
 <img src="jade-horse/01-mountain-horses.jpg" width="160" alt="Jade Horse: 01-mountain-horses.jpg"> <img src="jade-horse/02-ink-horse.jpg" width="160" alt="Jade Horse: 02-ink-horse.jpg"> <img src="jade-horse/03-carved-jade-horse.jpg" width="160" alt="Jade Horse: 03-carved-jade-horse.jpg"> <img src="jade-horse/omarchy.png" width="160" alt="Jade Horse: omarchy.png">
@@ -55,31 +65,39 @@ cd omarchy-wallpapers && git sparse-checkout set tokyo-night
 <img src="kanagawa/1-kanagawa.jpg" width="160" alt="Kanagawa: 1-kanagawa.jpg"> <img src="kanagawa/omarchy.png" width="160" alt="Kanagawa: omarchy.png">
 
 **[Last Horizon](last-horizon)** <sub>4</sub><br>
-<img src="last-horizon/1-eyes-wide.jpg" width="160" alt="Last Horizon: 1-eyes-wide.jpg"> <img src="last-horizon/2-blink.jpg" width="160" alt="Last Horizon: 2-blink.jpg"> <img src="last-horizon/3-bokeh.jpg" width="160" alt="Last Horizon: 3-bokeh.jpg"> <img src="last-horizon/4-new-horizons.jpg" width="160" alt="Last Horizon: 4-new-horizons.jpg">
+<img src="last-horizon/1-eyes-wide.jpg" width="160" alt="Last Horizon: 1-eyes-wide.jpg"> <img src="last-horizon/2-blink.jpg" width="160" alt="Last Horizon: 2-blink.jpg"> <img src="last-horizon/3-bokeh.jpg" width="160" alt="Last Horizon: 3-bokeh.jpg"> <img src="last-horizon/4-new-horizons.jpg" width="160" alt="Last Horizon: 4-new-horizons.jpg"><br>
+<sub>▶ Intros: [Eyes Wide](last-horizon/intros/1-eyes-wide.mp4)</sub>
 
 **[Lumon](lumon)** <sub>3</sub><br>
-<img src="lumon/01-united-in-severance.jpg" width="160" alt="Lumon: 01-united-in-severance.jpg"> <img src="lumon/02-opinions-equally.jpg" width="160" alt="Lumon: 02-opinions-equally.jpg"> <img src="lumon/omarchy.png" width="160" alt="Lumon: omarchy.png">
+<img src="lumon/01-united-in-severance.jpg" width="160" alt="Lumon: 01-united-in-severance.jpg"> <img src="lumon/02-opinions-equally.jpg" width="160" alt="Lumon: 02-opinions-equally.jpg"> <img src="lumon/omarchy.png" width="160" alt="Lumon: omarchy.png"><br>
+<sub>▶ Intros: [United In Severance](lumon/intros/01-united-in-severance.mp4), [Opinions Equally](lumon/intros/02-opinions-equally.mp4)</sub>
 
 **[Lupine](lupine)** <sub>6</sub><br>
 <img src="lupine/01-cherry-blossom-bokeh.jpg" width="160" alt="Lupine: 01-cherry-blossom-bokeh.jpg"> <img src="lupine/02-cherry-blossom-white.jpg" width="160" alt="Lupine: 02-cherry-blossom-white.jpg"> <img src="lupine/03-pastel-clouds.jpg" width="160" alt="Lupine: 03-pastel-clouds.jpg"> <img src="lupine/04-elegant-blue-wave.jpg" width="160" alt="Lupine: 04-elegant-blue-wave.jpg"> <img src="lupine/05-abstract-wave.jpg" width="160" alt="Lupine: 05-abstract-wave.jpg"> <img src="lupine/06-omarchy.png" width="160" alt="Lupine: 06-omarchy.png">
 
 **[Matte Black](matte-black)** <sub>4</sub><br>
-<img src="matte-black/0-ship-at-sea.jpg" width="160" alt="Matte Black: 0-ship-at-sea.jpg"> <img src="matte-black/1-dark-waters.jpg" width="160" alt="Matte Black: 1-dark-waters.jpg"> <img src="matte-black/2-dot-hands.png" width="160" alt="Matte Black: 2-dot-hands.png"> <img src="matte-black/omarchy.png" width="160" alt="Matte Black: omarchy.png">
+<img src="matte-black/0-ship-at-sea.jpg" width="160" alt="Matte Black: 0-ship-at-sea.jpg"> <img src="matte-black/1-dark-waters.jpg" width="160" alt="Matte Black: 1-dark-waters.jpg"> <img src="matte-black/2-dot-hands.png" width="160" alt="Matte Black: 2-dot-hands.png"> <img src="matte-black/omarchy.png" width="160" alt="Matte Black: omarchy.png"><br>
+<sub>▶ Intros: [Ship At Sea](matte-black/intros/0-ship-at-sea.mp4)</sub>
 
 **[Miasma](miasma)** <sub>3</sub><br>
-<img src="miasma/01-nature-of-fear.jpg" width="160" alt="Miasma: 01-nature-of-fear.jpg"> <img src="miasma/02-crowned.jpg" width="160" alt="Miasma: 02-crowned.jpg"> <img src="miasma/omarchy.png" width="160" alt="Miasma: omarchy.png">
+<img src="miasma/01-nature-of-fear.jpg" width="160" alt="Miasma: 01-nature-of-fear.jpg"> <img src="miasma/02-crowned.jpg" width="160" alt="Miasma: 02-crowned.jpg"> <img src="miasma/omarchy.png" width="160" alt="Miasma: omarchy.png"><br>
+<sub>▶ Intros: [Nature Of Fear](miasma/intros/01-nature-of-fear.mp4)</sub>
 
 **[Nord](nord)** <sub>4</sub><br>
-<img src="nord/0-black-moon.jpg" width="160" alt="Nord: 0-black-moon.jpg"> <img src="nord/1-city-view.png" width="160" alt="Nord: 1-city-view.png"> <img src="nord/2-night-hawks.png" width="160" alt="Nord: 2-night-hawks.png"> <img src="nord/omarchy.png" width="160" alt="Nord: omarchy.png">
+<img src="nord/0-black-moon.jpg" width="160" alt="Nord: 0-black-moon.jpg"> <img src="nord/1-city-view.png" width="160" alt="Nord: 1-city-view.png"> <img src="nord/2-night-hawks.png" width="160" alt="Nord: 2-night-hawks.png"> <img src="nord/omarchy.png" width="160" alt="Nord: omarchy.png"><br>
+<sub>▶ Intros: [Black Moon](nord/intros/0-black-moon.mp4)</sub>
 
 **[Retro 82](retro-82)** <sub>9</sub><br>
-<img src="retro-82/1-in-the-groove.jpg" width="160" alt="Retro 82: 1-in-the-groove.jpg"> <img src="retro-82/2-dusk-guardian.jpg" width="160" alt="Retro 82: 2-dusk-guardian.jpg"> <img src="retro-82/3-glassy-lines.jpg" width="160" alt="Retro 82: 3-glassy-lines.jpg"> <img src="retro-82/4-gateway.jpg" width="160" alt="Retro 82: 4-gateway.jpg"> <img src="retro-82/5-zen-boat.jpg" width="160" alt="Retro 82: 5-zen-boat.jpg"> <img src="retro-82/6-abstract-pyramids.jpg" width="160" alt="Retro 82: 6-abstract-pyramids.jpg"> <img src="retro-82/7-the-journey.jpg" width="160" alt="Retro 82: 7-the-journey.jpg"> <img src="retro-82/8-glitter-glass.jpg" width="160" alt="Retro 82: 8-glitter-glass.jpg"> <img src="retro-82/omarchy.png" width="160" alt="Retro 82: omarchy.png">
+<img src="retro-82/1-in-the-groove.jpg" width="160" alt="Retro 82: 1-in-the-groove.jpg"> <img src="retro-82/2-dusk-guardian.jpg" width="160" alt="Retro 82: 2-dusk-guardian.jpg"> <img src="retro-82/3-glassy-lines.jpg" width="160" alt="Retro 82: 3-glassy-lines.jpg"> <img src="retro-82/4-gateway.jpg" width="160" alt="Retro 82: 4-gateway.jpg"> <img src="retro-82/5-zen-boat.jpg" width="160" alt="Retro 82: 5-zen-boat.jpg"> <img src="retro-82/6-abstract-pyramids.jpg" width="160" alt="Retro 82: 6-abstract-pyramids.jpg"> <img src="retro-82/7-the-journey.jpg" width="160" alt="Retro 82: 7-the-journey.jpg"> <img src="retro-82/8-glitter-glass.jpg" width="160" alt="Retro 82: 8-glitter-glass.jpg"> <img src="retro-82/omarchy.png" width="160" alt="Retro 82: omarchy.png"><br>
+<sub>▶ Intros: [In The Groove](retro-82/intros/1-in-the-groove.mp4)</sub>
 
 **[Ristretto](ristretto)** <sub>5</sub><br>
-<img src="ristretto/0-launch.png" width="160" alt="Ristretto: 0-launch.png"> <img src="ristretto/1-color-curves.jpg" width="160" alt="Ristretto: 1-color-curves.jpg"> <img src="ristretto/2-coffee-beans.jpg" width="160" alt="Ristretto: 2-coffee-beans.jpg"> <img src="ristretto/3-industrial-moon.jpg" width="160" alt="Ristretto: 3-industrial-moon.jpg"> <img src="ristretto/omarchy.png" width="160" alt="Ristretto: omarchy.png">
+<img src="ristretto/0-launch.png" width="160" alt="Ristretto: 0-launch.png"> <img src="ristretto/1-color-curves.jpg" width="160" alt="Ristretto: 1-color-curves.jpg"> <img src="ristretto/2-coffee-beans.jpg" width="160" alt="Ristretto: 2-coffee-beans.jpg"> <img src="ristretto/3-industrial-moon.jpg" width="160" alt="Ristretto: 3-industrial-moon.jpg"> <img src="ristretto/omarchy.png" width="160" alt="Ristretto: omarchy.png"><br>
+<sub>▶ Intros: [Launch](ristretto/intros/0-launch.mp4)</sub>
 
 **[Rose Pine Dawn](rose-pine)** <sub>4</sub><br>
-<img src="rose-pine/1-funky-shapes.jpg" width="160" alt="Rose Pine Dawn: 1-funky-shapes.jpg"> <img src="rose-pine/2-dot-map.jpg" width="160" alt="Rose Pine Dawn: 2-dot-map.jpg"> <img src="rose-pine/3-omarchy-plants.jpg" width="160" alt="Rose Pine Dawn: 3-omarchy-plants.jpg"> <img src="rose-pine/omarchy.png" width="160" alt="Rose Pine Dawn: omarchy.png">
+<img src="rose-pine/1-funky-shapes.jpg" width="160" alt="Rose Pine Dawn: 1-funky-shapes.jpg"> <img src="rose-pine/2-dot-map.jpg" width="160" alt="Rose Pine Dawn: 2-dot-map.jpg"> <img src="rose-pine/3-omarchy-plants.jpg" width="160" alt="Rose Pine Dawn: 3-omarchy-plants.jpg"> <img src="rose-pine/omarchy.png" width="160" alt="Rose Pine Dawn: omarchy.png"><br>
+<sub>▶ Intros: [Funky Shapes](rose-pine/intros/1-funky-shapes.mp4)</sub>
 
 **[Solitude](solitude)** <sub>5</sub><br>
 <img src="solitude/1-on-pole.jpg" width="160" alt="Solitude: 1-on-pole.jpg"> <img src="solitude/2-wreakage.jpg" width="160" alt="Solitude: 2-wreakage.jpg"> <img src="solitude/3-climb.jpg" width="160" alt="Solitude: 3-climb.jpg"> <img src="solitude/4-ether.jpg" width="160" alt="Solitude: 4-ether.jpg"> <img src="solitude/5-eyed.jpg" width="160" alt="Solitude: 5-eyed.jpg">
@@ -91,16 +109,18 @@ cd omarchy-wallpapers && git sparse-checkout set tokyo-night
 <img src="tokyo-night/0-liftoff.jpg" width="160" alt="Tokyo Night: 0-liftoff.jpg"> <img src="tokyo-night/1-winding-road.jpg" width="160" alt="Tokyo Night: 1-winding-road.jpg"> <img src="tokyo-night/2-quattro.jpg" width="160" alt="Tokyo Night: 2-quattro.jpg"> <img src="tokyo-night/3-swirl-buck.jpg" width="160" alt="Tokyo Night: 3-swirl-buck.jpg"> <img src="tokyo-night/4-sunset-lake.jpg" width="160" alt="Tokyo Night: 4-sunset-lake.jpg"> <img src="tokyo-night/5-omakub.jpg" width="160" alt="Tokyo Night: 5-omakub.jpg"> <img src="tokyo-night/6-oma-cityscape.jpg" width="160" alt="Tokyo Night: 6-oma-cityscape.jpg"> <img src="tokyo-night/7-oma.jpg" width="160" alt="Tokyo Night: 7-oma.jpg"> <img src="tokyo-night/omarchy.png" width="160" alt="Tokyo Night: omarchy.png">
 
 **[Vantablack](vantablack)** <sub>5</sub><br>
-<img src="vantablack/0-dot-hands.png" width="160" alt="Vantablack: 0-dot-hands.png"> <img src="vantablack/1-twisted-stairs.jpg" width="160" alt="Vantablack: 1-twisted-stairs.jpg"> <img src="vantablack/2-layers-deep.jpg" width="160" alt="Vantablack: 2-layers-deep.jpg"> <img src="vantablack/3-layers-stacked.jpg" width="160" alt="Vantablack: 3-layers-stacked.jpg"> <img src="vantablack/omarchy.png" width="160" alt="Vantablack: omarchy.png">
+<img src="vantablack/0-dot-hands.png" width="160" alt="Vantablack: 0-dot-hands.png"> <img src="vantablack/1-twisted-stairs.jpg" width="160" alt="Vantablack: 1-twisted-stairs.jpg"> <img src="vantablack/2-layers-deep.jpg" width="160" alt="Vantablack: 2-layers-deep.jpg"> <img src="vantablack/3-layers-stacked.jpg" width="160" alt="Vantablack: 3-layers-stacked.jpg"> <img src="vantablack/omarchy.png" width="160" alt="Vantablack: omarchy.png"><br>
+<sub>▶ Intros: [Dot Hands](vantablack/intros/0-dot-hands.mp4)</sub>
 
 **[White](white)** <sub>4</sub><br>
-<img src="white/1-white.jpg" width="160" alt="White: 1-white.jpg"> <img src="white/2-white.jpg" width="160" alt="White: 2-white.jpg"> <img src="white/3-white.jpg" width="160" alt="White: 3-white.jpg"> <img src="white/omarchy.png" width="160" alt="White: omarchy.png">
+<img src="white/1-white.jpg" width="160" alt="White: 1-white.jpg"> <img src="white/2-white.jpg" width="160" alt="White: 2-white.jpg"> <img src="white/3-white.jpg" width="160" alt="White: 3-white.jpg"> <img src="white/omarchy.png" width="160" alt="White: omarchy.png"><br>
+<sub>▶ Intros: [White](white/intros/1-white.mp4)</sub>
 
 ## Contributing
 
 This repo copies Omarchy's wallpapers automatically every day, so please don't add or change pictures here. To suggest a wallpaper, contribute it to [Omarchy](https://github.com/omacom/omarchy) and it will show up here after the next sync.
 
-The sync is [`sync.py`](sync.py), run daily by a [GitHub Action](.github/workflows/sync.yml). It also converts Omarchy's WebP files to JPEG or PNG so they open anywhere, and keeps a small preview of each one in `.previews/`. Last synced from Omarchy commit `717175d`.
+The sync is [`sync.py`](sync.py), run daily by a [GitHub Action](.github/workflows/sync.yml). It also converts Omarchy's WebP files to JPEG or PNG so they open anywhere, copies the intro animations as they are, and keeps a small preview of each wallpaper in `.previews/`. Last synced from Omarchy commit `e56f833`.
 
 ## Credits
 
